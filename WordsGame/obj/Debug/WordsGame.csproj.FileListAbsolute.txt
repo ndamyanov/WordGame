@@ -1,0 +1,14 @@
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\bin\Debug\WordsGame.exe.config
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\bin\Debug\WordsGame.exe
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\bin\Debug\WordsGame.pdb
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.csprojResolveAssemblyReference.cache
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.Main.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.WordsGame.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.Form_Options.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.History_Form.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.NewWord_Form.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.Properties.Resources.resources
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.csproj.GenerateResource.Cache
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.csproj.CoreCompileInputs.cache
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.exe
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.pdb
