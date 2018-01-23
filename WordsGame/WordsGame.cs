@@ -12,18 +12,28 @@ namespace WordsGame
 {
     public partial class WordsGame : Form
     {
+
+        public int Score { get; set; }
+
+        public int Passed { get; set; }
+
         public WordsGame()
         {
             InitializeComponent();
             labelWord.Text = RandomWordGenerator.NewWord();
-            labelTimer.Text = ConstantsParams.SecondsForWord.ToString();
+            labelTimer.Text = ConstantsParams.TimeForGame.ToString();
+            labelSCore.Text = Score.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (labelTimer.Text == 0.ToString())
             {
-                this.buttonNextWord_Click(sender, e);
+                timer1.Stop();
+                this.Hide();
+                Result_Form resultForm = new Result_Form(Score, Passed);
+                resultForm.ShowDialog();
+                
             }
             else
             {
@@ -31,16 +41,22 @@ namespace WordsGame
             }
         }
 
-        private void buttonNextWord_Click(object sender, EventArgs e)
+        private void buttonPass_Click(object sender, EventArgs e)
         {
-            labelTimer.Text = ConstantsParams.SecondsForWord.ToString();
+            this.Passed++;
             labelWord.Text = RandomWordGenerator.NewWord();
-        
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCorrect_Click(object sender, EventArgs e)
+        {
+            this.Score++;
+            labelSCore.Text = Score.ToString();
+            labelWord.Text = RandomWordGenerator.NewWord();
         }
     }
 }

@@ -12,3 +12,4 @@ C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsG
 C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.csproj.CoreCompileInputs.cache
 C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.exe
 C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.pdb
+C:\Users\nikolay.damyanov\Documents\Visual Studio 2017\Projects\WordsGame\WordsGame\obj\Debug\WordsGame.Result_Form.resources

@@ -8,7 +8,7 @@ namespace WordsGame
 {
     public static class ConstantsParams
     {
-        public static int SecondsForWord = 120;
+        public static int TimeForGame = 120;
 
         public static string FilePath = @"words.txt";
 

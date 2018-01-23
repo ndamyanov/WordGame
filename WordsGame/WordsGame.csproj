@@ -52,6 +52,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Result_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result_Form.Designer.cs">
+      <DependentUpon>Result_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="WordsGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="RandomWordGenerator.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result_Form.resx">
+      <DependentUpon>Result_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WordsGame.resx">
       <DependentUpon>WordsGame.cs</DependentUpon>

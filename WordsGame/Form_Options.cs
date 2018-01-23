@@ -15,16 +15,16 @@ namespace WordsGame
         public Form_Options()
         {
             InitializeComponent();
-            trackBarTime.Value = ConstantsParams.SecondsForWord / 30;
+            trackBarTime.Value = ConstantsParams.TimeForGame / 30;
         }
 
         private void AdjustTimeForResponse(object sender, EventArgs e)
         {
             int time = trackBarTime.Value * 30;
-            ConstantsParams.SecondsForWord = time;
+            ConstantsParams.TimeForGame = time;
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
             this.Close();
             

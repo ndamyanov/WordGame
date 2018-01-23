@@ -12,6 +12,8 @@ namespace WordsGame
 {
     public partial class Main : Form
     {
+        public int Score { get; set; }
+
         public Main()
         {
             InitializeComponent();

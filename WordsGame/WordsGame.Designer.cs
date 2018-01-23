@@ -33,8 +33,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelTimer = new System.Windows.Forms.Label();
             this.labelRemainingTime = new System.Windows.Forms.Label();
-            this.buttonNextWord = new System.Windows.Forms.Button();
+            this.buttonPass = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnCorrect = new System.Windows.Forms.Button();
+            this.labelForScore = new System.Windows.Forms.Label();
+            this.labelSCore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelWord
@@ -71,16 +74,16 @@
             this.labelRemainingTime.TabIndex = 2;
             this.labelRemainingTime.Text = "Remaining time:";
             // 
-            // buttonNextWord
+            // buttonPass
             // 
-            this.buttonNextWord.Location = new System.Drawing.Point(55, 82);
-            this.buttonNextWord.Name = "buttonNextWord";
-            this.buttonNextWord.Size = new System.Drawing.Size(174, 48);
-            this.buttonNextWord.TabIndex = 3;
-            this.buttonNextWord.Text = "Next Word";
-            this.buttonNextWord.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.buttonNextWord.UseVisualStyleBackColor = true;
-            this.buttonNextWord.Click += new System.EventHandler(this.buttonNextWord_Click);
+            this.buttonPass.Location = new System.Drawing.Point(28, 137);
+            this.buttonPass.Name = "buttonPass";
+            this.buttonPass.Size = new System.Drawing.Size(82, 29);
+            this.buttonPass.TabIndex = 3;
+            this.buttonPass.Text = "Pass";
+            this.buttonPass.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonPass.UseVisualStyleBackColor = true;
+            this.buttonPass.Click += new System.EventHandler(this.buttonPass_Click);
             // 
             // btnBack
             // 
@@ -92,13 +95,44 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // btnCorrect
+            // 
+            this.btnCorrect.Location = new System.Drawing.Point(162, 137);
+            this.btnCorrect.Name = "btnCorrect";
+            this.btnCorrect.Size = new System.Drawing.Size(82, 29);
+            this.btnCorrect.TabIndex = 6;
+            this.btnCorrect.Text = "Correct";
+            this.btnCorrect.UseVisualStyleBackColor = true;
+            this.btnCorrect.Click += new System.EventHandler(this.btnCorrect_Click);
+            // 
+            // labelForScore
+            // 
+            this.labelForScore.AutoSize = true;
+            this.labelForScore.Location = new System.Drawing.Point(25, 226);
+            this.labelForScore.Name = "labelForScore";
+            this.labelForScore.Size = new System.Drawing.Size(38, 13);
+            this.labelForScore.TabIndex = 7;
+            this.labelForScore.Text = "Score:";
+            // 
+            // labelSCore
+            // 
+            this.labelSCore.AutoSize = true;
+            this.labelSCore.Location = new System.Drawing.Point(70, 226);
+            this.labelSCore.Name = "labelSCore";
+            this.labelSCore.Size = new System.Drawing.Size(10, 13);
+            this.labelSCore.TabIndex = 8;
+            this.labelSCore.Text = "-";
+            // 
             // WordsGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.labelSCore);
+            this.Controls.Add(this.labelForScore);
+            this.Controls.Add(this.btnCorrect);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.buttonNextWord);
+            this.Controls.Add(this.buttonPass);
             this.Controls.Add(this.labelRemainingTime);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelWord);
@@ -115,7 +149,10 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Label labelRemainingTime;
-        private System.Windows.Forms.Button buttonNextWord;
+        private System.Windows.Forms.Button buttonPass;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnCorrect;
+        private System.Windows.Forms.Label labelForScore;
+        private System.Windows.Forms.Label labelSCore;
     }
 }

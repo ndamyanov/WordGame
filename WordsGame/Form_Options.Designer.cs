@@ -30,7 +30,7 @@
         {
             this.trackBarTime = new System.Windows.Forms.TrackBar();
             this.labelTime = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTime)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,22 +51,22 @@
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "Time:";
             // 
-            // btnBack
+            // btnOk
             // 
-            this.btnBack.Location = new System.Drawing.Point(186, 226);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 2;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnOk.Location = new System.Drawing.Point(186, 226);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // Form_Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.trackBarTime);
             this.Name = "Form_Options";
@@ -81,6 +81,6 @@
 
         private System.Windows.Forms.TrackBar trackBarTime;
         private System.Windows.Forms.Label labelTime;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnOk;
     }
 }
