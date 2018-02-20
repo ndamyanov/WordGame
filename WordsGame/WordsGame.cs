@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WordsGame
@@ -23,6 +16,7 @@ namespace WordsGame
             labelWord.Text = RandomWordGenerator.NewWord();
             labelTimer.Text = ConstantsParams.TimeForGame.ToString();
             labelSCore.Text = Score.ToString();
+            labelPassed.Text = Passed.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -39,12 +33,24 @@ namespace WordsGame
             {
                 labelTimer.Text = (int.Parse(labelTimer.Text) - 1).ToString();
             }
+           // SystemSounds.Exclamation.Play();
+
+            //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            //player.SoundLocation = "soundFile.wav";
+            //player.Play();
         }
 
         private void buttonPass_Click(object sender, EventArgs e)
         {
             this.Passed++;
+            labelPassed.Text = Passed.ToString();
+
+            if (Passed >= ConstantsParams.AvailablePasses)
+            {
+                this.buttonPass.Enabled = false;  
+            }
             labelWord.Text = RandomWordGenerator.NewWord();
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)

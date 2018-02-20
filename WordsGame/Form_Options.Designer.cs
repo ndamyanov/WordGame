@@ -69,6 +69,8 @@
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.trackBarTime);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_Options";
             this.Text = "Options";
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTime)).EndInit();

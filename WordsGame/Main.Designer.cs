@@ -83,6 +83,8 @@
             this.Controls.Add(this.btnHistory);
             this.Controls.Add(this.btnOptions);
             this.Controls.Add(this.btnPlay);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
             this.ResumeLayout(false);

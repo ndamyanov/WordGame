@@ -14,5 +14,7 @@ namespace WordsGame
 
         public static string HistoryFile = @"history.txt";
 
+        public static int AvailablePasses = 3;
+
     }
 }

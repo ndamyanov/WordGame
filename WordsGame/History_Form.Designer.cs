@@ -45,6 +45,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.richTextBoxHistory);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "History_Form";
             this.Text = "History_Form";
             this.ResumeLayout(false);

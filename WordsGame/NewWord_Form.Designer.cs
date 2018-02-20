@@ -80,6 +80,8 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.labelNewWord);
             this.Controls.Add(this.textBoxNewWord);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "NewWord_Form";
             this.Text = "NewWord_Form";
             this.ResumeLayout(false);

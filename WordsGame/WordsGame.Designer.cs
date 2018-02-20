@@ -38,6 +38,8 @@
             this.btnCorrect = new System.Windows.Forms.Button();
             this.labelForScore = new System.Windows.Forms.Label();
             this.labelSCore = new System.Windows.Forms.Label();
+            this.labelForPassed = new System.Windows.Forms.Label();
+            this.labelPassed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelWord
@@ -108,7 +110,7 @@
             // labelForScore
             // 
             this.labelForScore.AutoSize = true;
-            this.labelForScore.Location = new System.Drawing.Point(25, 226);
+            this.labelForScore.Location = new System.Drawing.Point(25, 216);
             this.labelForScore.Name = "labelForScore";
             this.labelForScore.Size = new System.Drawing.Size(38, 13);
             this.labelForScore.TabIndex = 7;
@@ -117,17 +119,37 @@
             // labelSCore
             // 
             this.labelSCore.AutoSize = true;
-            this.labelSCore.Location = new System.Drawing.Point(70, 226);
+            this.labelSCore.Location = new System.Drawing.Point(70, 216);
             this.labelSCore.Name = "labelSCore";
             this.labelSCore.Size = new System.Drawing.Size(10, 13);
             this.labelSCore.TabIndex = 8;
             this.labelSCore.Text = "-";
+            // 
+            // labelForPassed
+            // 
+            this.labelForPassed.AutoSize = true;
+            this.labelForPassed.Location = new System.Drawing.Point(21, 239);
+            this.labelForPassed.Name = "labelForPassed";
+            this.labelForPassed.Size = new System.Drawing.Size(42, 13);
+            this.labelForPassed.TabIndex = 9;
+            this.labelForPassed.Text = "Passed";
+            // 
+            // labelPassed
+            // 
+            this.labelPassed.AutoSize = true;
+            this.labelPassed.Location = new System.Drawing.Point(70, 236);
+            this.labelPassed.Name = "labelPassed";
+            this.labelPassed.Size = new System.Drawing.Size(10, 13);
+            this.labelPassed.TabIndex = 10;
+            this.labelPassed.Text = "-";
             // 
             // WordsGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.labelPassed);
+            this.Controls.Add(this.labelForPassed);
             this.Controls.Add(this.labelSCore);
             this.Controls.Add(this.labelForScore);
             this.Controls.Add(this.btnCorrect);
@@ -136,6 +158,8 @@
             this.Controls.Add(this.labelRemainingTime);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelWord);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "WordsGame";
             this.Text = "WordsGame";
             this.ResumeLayout(false);
@@ -154,5 +178,7 @@
         private System.Windows.Forms.Button btnCorrect;
         private System.Windows.Forms.Label labelForScore;
         private System.Windows.Forms.Label labelSCore;
+        private System.Windows.Forms.Label labelForPassed;
+        private System.Windows.Forms.Label labelPassed;
     }
 }

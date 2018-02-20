@@ -103,6 +103,8 @@
             this.Controls.Add(this.labelScore);
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.buttonNewGame);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Result_Form";
             this.Text = "Result_Form";
             this.ResumeLayout(false);
